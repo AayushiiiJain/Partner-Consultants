@@ -1,0 +1,7 @@
+{
+  "name": "partner-consultants",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

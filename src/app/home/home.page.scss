@@ -1,0 +1,96 @@
+#container {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #8c8c8c;
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+ion-img {
+  width: 25%;
+  margin: auto;
+  height: 100%;
+}
+.infographic-image {
+  width: 50%;
+}
+.service-models-image {
+  width: 10%;
+  margin-top: 5px;
+}
+.service-models-header {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+.introduction-card {
+  margin: auto;
+  width: 75%;
+}
+.service-models-card {
+  width: 75%;
+  margin: auto;
+  box-shadow: none;
+}
+// same height
+ion-content {
+  ion-col {
+    display: flex;
+  }
+}
+
+ion-card {
+  img {
+    margin: 10px auto;
+    height: 25vh !important;
+    width: auto !important;
+    max-width: 85%;
+    align-items: center;
+  }
+}
+.card-header {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+.icon-col {
+  margin: auto;
+}
+.write-to-us-card {
+  width: 100%;
+}
+.homepage-image {
+  width: 1520px;
+  object-fit: fill;
+  height: 500px;
+}
+.home-text {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  font-size: 20px;
+  color: white;
+}
+ion-content {
+  --ion-background-color: rgb(42, 66, 61);
+  --ion-color: white;
+}
+ion-card {
+  color: white;
+}

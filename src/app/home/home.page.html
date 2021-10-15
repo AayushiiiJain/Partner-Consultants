@@ -1,0 +1,336 @@
+<ion-header [translucent]="true">
+  <app-header></app-header>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- image -->
+  <ion-card class="homepage-image-card">
+    <div class="home-text">Partner Consultants...</div>
+    <ion-img class="homepage-image" src="assets/homepage-image.jpg" no-padding no-margin></ion-img>
+  </ion-card>
+  <!-- intro -->
+  <ion-card class="introduction-card">
+    <ion-card-header>
+      <ion-card-title>Introduction</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+        {{homeIntroductionText}}
+    </ion-card-content>
+  </ion-card>
+  <!-- infographic and content -->
+  <ion-card class="welcome-card">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="8">
+          <ion-img class="infographic-image" src="assets/5P-infographic.png"></ion-img>
+        </ion-col>
+        <ion-col size="4" style="margin: auto;">
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-card-header>
+                  <ion-card-title>Our Approach</ion-card-title>
+                </ion-card-header>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-card-content>
+                  <p>{{infographicApproachText}}</p>
+                </ion-card-content>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+  <!-- services -->
+  <ion-card class="welcome-card">
+    <ion-card-header>
+        <ion-card-subtitle>Get Started</ion-card-subtitle>
+        <ion-card-title>Welcome to Ionic</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
+        <button id="demo">Click me</button>
+    </ion-card-content>
+  </ion-card>
+  <!-- service models -->
+  <ion-card class="service-models-ion-card">
+    <ion-card-header class="card-header">
+      <ion-card-title>Service Models</ion-card-title>
+    </ion-card-header>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+
+          <ion-card class="service-models-card">
+            <ion-img class="service-models-image" src="assets/for-end-clients-service-models.png"></ion-img>
+            <ion-card-header class="service-models-header">
+              <ion-card-title>For end clients:</ion-card-title>
+            </ion-card-header>
+
+            <!-- Bulleted Content -->
+            <!-- <ion-card-content>
+              <ul style="list-style-type:disc;">
+                <li>{{endClientsServiceModelsProjectWorkText}}</li>
+                <li>{{endClientsServiceModelsMonthlyRetainerText}}</li>
+                <li>{{endClientsServiceModelsOnCallAssignmentText}}</li>
+               </ul>
+            </ion-card-content> -->
+
+            <!-- Grid form -->
+            <ion-card-content>
+              <ion-grid>
+                <ion-row>
+                  <ion-col size="4">
+                    <ion-card class="welcome-card">
+                      <ion-card-header>
+                        <ion-card-title>Project Work</ion-card-title>
+                      </ion-card-header>
+                      <ion-card-content>
+                          <p>{{endClientsServiceModelsProjectWorkText}}</p>
+                      </ion-card-content>
+                    </ion-card>
+                  </ion-col>
+                  <ion-col size="4">
+                    <ion-card class="welcome-card">
+                      <ion-card-header>
+                        <ion-card-title>Monthly Retainer</ion-card-title>
+                      </ion-card-header>
+                      <ion-card-content>
+                          <p>{{endClientsServiceModelsMonthlyRetainerText}}</p>
+                      </ion-card-content>
+                    </ion-card>
+                  </ion-col>
+                  <ion-col size="4">
+                    <ion-card class="welcome-card">
+                      <ion-card-header>
+                        <ion-card-title>On-call Assignment</ion-card-title>
+                      </ion-card-header>
+                      <ion-card-content>
+                          <p>{{endClientsServiceModelsOnCallAssignmentText}}</p>
+                      </ion-card-content>
+                    </ion-card>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </ion-card-content>
+
+          </ion-card>
+
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-card class="service-models-card">
+            <ion-img class="service-models-image" src="assets/for-consulting-firms-service-models.png"></ion-img>
+            <ion-card-header class="service-models-header">
+              <ion-card-title>For consulting firms:</ion-card-title>
+            </ion-card-header>
+
+            <!-- Bulleted Content -->
+            <!-- <ion-card-content>
+              <ul style="list-style-type:disc;">
+                <li>{{endClientsServiceModelsProjectWorkText}}</li>
+                <li>{{endClientsServiceModelsMonthlyRetainerText}}</li>
+                <li>{{endClientsServiceModelsOnCallAssignmentText}}</li>
+               </ul>
+            </ion-card-content> -->
+
+            <!-- Grid form -->
+            <ion-card-content>
+              <ion-grid>
+                <ion-row>
+                  <ion-col size="6">
+                    <ion-card class="welcome-card">
+                      <ion-card-content>
+                          <p>{{consultingFirms1Text}}</p>
+                      </ion-card-content>
+                    </ion-card>
+                  </ion-col>
+                  <ion-col size="6">
+                    <ion-card class="welcome-card">
+                      <ion-card-content>
+                          <p>{{consultingFirms2Text}}</p>
+                      </ion-card-content>
+                    </ion-card>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </ion-card-content>
+
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+  <!-- why choose us -->
+  <ion-card class="welcome-card">
+    <ion-card-header class="card-header">
+      <ion-card-title>Why Choose Us?</ion-card-title>
+    </ion-card-header>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card class="service-models-card">
+            <ion-card-content>
+              <ion-grid>
+                <ion-row>
+                  <ion-col size="4">
+                    <ion-card class="welcome-card">
+                      <ion-grid>
+                        <ion-row>
+                          <ion-col size="12">
+                            <ion-img class="service-models-image" src="assets/practical-solutions.png"></ion-img>
+                          </ion-col>
+                        </ion-row>
+                        <ion-row>
+                          <ion-col size="12">
+                            <ion-card-header>
+                              <ion-card-title>Practical Solutions</ion-card-title>
+                            </ion-card-header>
+                          </ion-col>
+                        </ion-row>
+                        <ion-row>
+                          <ion-col>
+                            <ion-card-content>
+                              <p>{{chooseUsPracticalSolutionsText}}</p>
+                            </ion-card-content>
+                          </ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-card>
+                  </ion-col>
+                  <ion-col size="4">
+                    <ion-card class="welcome-card">
+                      <ion-grid>
+                        <ion-row>
+                          <ion-col size="12">
+                            <ion-img class="service-models-image" src="assets/in-depth-research.png"></ion-img>
+                          </ion-col>
+                        </ion-row>
+                        <ion-row>
+                          <ion-col size="12">
+                            <ion-card-header>
+                              <ion-card-title>In-depth Research</ion-card-title>
+                            </ion-card-header>
+                          </ion-col>
+                        </ion-row>
+                        <ion-row>
+                          <ion-col>
+                            <ion-card-content>
+                              <p>{{chooseUsInDepthResearchText}}</p>
+                            </ion-card-content>
+                          </ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-card>
+                  </ion-col>
+                  <ion-col size="4">
+                    <ion-card class="welcome-card">
+                      <ion-grid>
+                        <ion-row>
+                          <ion-col size="12">
+                            <ion-img class="service-models-image" src="assets/industry-expertise.png"></ion-img>
+                          </ion-col>
+                        </ion-row>
+                        <ion-row>
+                          <ion-col size="12">
+                            <ion-card-header>
+                              <ion-card-title>Industry Expertise</ion-card-title>
+                            </ion-card-header>
+                          </ion-col>
+                        </ion-row>
+                        <ion-row>
+                          <ion-col>
+                            <ion-card-content>
+                              <p>{{chooseUsIndustryExpertiseText}}</p>
+                            </ion-card-content>
+                          </ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-card>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+  <!-- contact us -->
+  <ion-card class="service-models-ion-card">
+    <ion-card-header class="card-header">
+      <ion-card-title>Get Started</ion-card-title>
+    </ion-card-header>
+    <ion-grid>
+      <ion-row style="box-shadow: none;">
+        <ion-col>
+          <ion-card class="service-models-card">
+            <ion-card-content>
+              <ion-grid>
+                <ion-row>
+                  <ion-col size="5">
+                    <ion-card class="welcome-card">
+                      <ion-card-content>
+                        <ion-row>
+                          <ion-col class="icon-col" size="1">
+                            <ion-icon name="mail"></ion-icon>
+                          </ion-col>
+                          <ion-col size="11">business@partnerconsultants.in</ion-col>
+                        </ion-row>
+                        <ion-row>
+                          <ion-col class="icon-col" size="1">
+                            <ion-icon name="mail"></ion-icon>
+                          </ion-col>
+                          <ion-col size="11">prateek.nagar@partnerconsultants.in</ion-col>
+                        </ion-row>
+                        <ion-row>
+                          <ion-col class="icon-col" size="1">
+                            <ion-icon name="call"></ion-icon>
+                          </ion-col>
+                          <ion-col size="11">91 - 8800440928</ion-col>
+                        </ion-row>
+                      </ion-card-content>
+                    </ion-card>
+                  </ion-col>
+                  <ion-col size="7">
+                    <ion-card class="write-to-us-card">
+                      <ion-card-header>
+                        <ion-card-title>Write to Us</ion-card-title>
+                      </ion-card-header>
+                      <ion-card-content>
+                          <form>
+                            <ion-item lines="full">
+                              <ion-label position="floating">Name</ion-label>
+                              <ion-input type="text" required></ion-input>
+                            </ion-item>
+                            <ion-item lines="full">
+                              <ion-label position="floating">Subject</ion-label>
+                              <ion-input type="text" required></ion-input>
+                            </ion-item>
+                            <ion-item lines="full">
+                              <ion-label position="floating">Message</ion-label>
+                              <ion-input type="text" required></ion-input>
+                            </ion-item>
+                            <ion-row>
+                              <ion-col>
+                                <ion-button type="submit" color="danger" expand="block">SEND</ion-button>
+                              </ion-col>
+                            </ion-row>
+                          </form>
+                      </ion-card-content>
+                    </ion-card>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+</ion-content>
