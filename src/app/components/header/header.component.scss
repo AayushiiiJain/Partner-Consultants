@@ -9,12 +9,20 @@
 .dropdown:hover .dropdown-menu {
     display: block;
     background-color: rgb(42, 66, 61);
+    border-radius: 8px;
+    margin-top: -8px;
+    margin-right: -93px;
+}
+.dropdown-menu>li {
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .dropdown:hover .dropdown-menu>li>a {
     color: white;
 }
 .dropdown:hover .dropdown-menu>li>a {
-    color: #9d9d9d;
+    color: lightgrey;
+    font-size: 18px;
 }
 .dropdown:hover .dropdown-menu>li>a:hover {
     color: white;
@@ -23,4 +31,14 @@
 .homepage-image {
     width: 45%;
     margin-top: -9px;
+}
+li a {
+    font-family: "Lato";
+    font-size: 20px;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: lightgrey;
+}
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: white;
 }
