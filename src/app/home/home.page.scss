@@ -28,7 +28,7 @@ ion-img {
   height: 100%;
 }
 .infographic-image {
-  width: 50%;
+  width: 75%;
 }
 .service-models-image {
   width: 10%;
@@ -42,6 +42,15 @@ ion-img {
 .introduction-card {
   margin: auto;
   width: 75%;
+  box-shadow: none;
+}
+.infographic-card {
+  box-shadow: none;
+}
+.introduction-card-content {
+  font-size: 24px;
+  text-align: center;
+  font-family: 'Lato';
 }
 .service-models-card {
   width: 75%;
@@ -96,12 +105,13 @@ ion-card, ion-card-title {
   color: white;
 }
 .text1 {
-  // border: 1px solid red;
   font-size: 50px;
   padding: 0;
   margin: 0;
 }
 .text2 {
-  // border: 1px solid yellow;
   font-size: 50px;
+}
+.homepage-image-card {
+  margin: 0;
 }
