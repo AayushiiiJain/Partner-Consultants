@@ -11,113 +11,108 @@
     </div>
     <ion-img class="homepage-image" src="assets/homepage-image.jpg" no-padding no-margin></ion-img>
   </ion-card>
+
   <!-- intro -->
   <ion-card class="introduction-card">
-    <!-- <ion-card-header>
-      <ion-card-title>Introduction</ion-card-title>
-    </ion-card-header> -->
     <ion-card-content class="introduction-card-content">
-        {{homeIntroductionText}}
+      {{homeIntroductionText}}
     </ion-card-content>
   </ion-card>
+
   <!-- infographic and content -->
   <ion-card class="infographic-card">
-    <!-- <ion-grid> -->
-      <!-- <ion-row> -->
-        <!-- <ion-col size="8"> -->
-          <ion-img class="infographic-image" src="assets/5P-infographic.png"></ion-img>
-        <!-- </ion-col> -->
-        <!-- <ion-col size="4" style="margin: auto;">
-          <ion-grid>
-            <ion-row>
-              <ion-col>
-                <ion-card-header>
-                  <ion-card-title>Our Approach</ion-card-title>
-                </ion-card-header>
-              </ion-col>
-            </ion-row>
-            <ion-row>
-              <ion-col>
-                <ion-card-content>
-                  <p>{{infographicApproachText}}</p>
-                </ion-card-content>
-              </ion-col>
-            </ion-row>
-          </ion-grid>
-        </ion-col> -->
-      <!-- </ion-row> -->
-    <!-- </ion-grid> -->
+    <ion-img class="infographic-image" src="assets/5P-infographic.png"></ion-img>
   </ion-card>
+
+  <!-- our approach -->
+  <ion-card class="our-approach-card">
+    <ion-img class="our-approach-image" src="assets/our-approach.png"></ion-img>
+  </ion-card>
+
   <!-- services -->
   <ion-card class="services-card">
     <ion-card-header class="service-models-header">
-      <ion-card-title>Services</ion-card-title>
+      <ion-card-title class="card-title">Services</ion-card-title>
     </ion-card-header>
     <ion-card-content class="service-content">
-      
-      <!-- <ion-grid>
-        <ion-row>
-          <ion-col>
-            <div class="square">
-
-            </div>
-          </ion-col>
-          <ion-col>
-            2
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            3
-          </ion-col>
-          <ion-col>
-            4
-          </ion-col>
-        </ion-row>
-      </ion-grid> -->
-
-      <ion-grid>
-        <ion-row>
-          <ion-col size="8">
-            <div class="grid">
-              <div class="child" style="border-right: 2px dashed white;border-bottom: 2px dashed white;">
-                <p class="title">BUSINESS STRATEGY</p>
-                <p class="subtitle">Sync destination with company navigation</p>
-              </div>
-              <div class="child" style="border-bottom: 2px dashed white;">
-                <p class="title">BUSINESS RESEARCH</p>
-                <p class="subtitle">Back business decisions with data and insights</p>
-              </div>
-              <span class="grid-circle"></span>
-              <span></span>
-              <div class="child" style="border-right: 2px dashed white;">
-                <p class="title">FUNCTIONAL EXCELLENCE</p>
-                <p class="subtitle">Optimize performance of business functions</p>
-              </div>
-              <div class="child">
-                <p class="title">BUSINESS OPERATIONS</p>
-                <p class="subtitle">Realize business vision through implementation</p>
-              </div>
-            </div>
-          </ion-col>
-          <ion-col size="4">
-            <div class="service-details-grid">
-              <div class="child">
-                <p class="title">abc</p>
-                <p class="subtitle">abcdef</p>
-              </div>
-            </div>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-      
-
+      <div class="grid">
+        <div class="service-grid">
+          <div class="child1" style="border-right: 2px dashed white;border-bottom: 2px dashed white;margin-right: 7px;">
+            <p class="title">BUSINESS STRATEGY</p>
+            <p class="subtitle">Sync destination with company navigation</p>
+          </div>
+          <div class="service-details-grid1">
+            <p class="whatWeOfferText">What We Offer?</p>
+            <ul>
+              <li>Corporate strategy</li>
+              <li>Business planning</li>
+              <li>Strategic partnerships</li>
+              <li>Business innovation</li>
+              <li>Go-To-Market</li>
+              <li>Business alliances</li>
+            </ul>
+          </div>
+          <div class="child2" style="border-bottom: 2px dashed white; margin-left: -7px;">
+            <p class="title">BUSINESS RESEARCH</p>
+            <p class="subtitle">Back business decisions with data and insights</p>
+          </div>
+          <div class="service-details-grid2">
+            <p class="whatWeOfferText">What We Offer?</p>
+            <ul>
+              <li>Industry benchmarking</li>
+              <li>Market research</li>
+              <li>Financial modelling</li>
+              <li>PMO services1</li>
+              <li>Business modelling</li>
+              <li>Business insights</li>
+            </ul>
+          </div>
+          <span class="grid-circle"></span>
+          <span></span>
+          <div class="child3" style="border-right: 2px dashed white;margin-top: -9px; margin-right: 6px;">
+            <p class="title">FUNCTIONAL EXCELLENCE</p>
+            <p class="subtitle">Optimize performance of business functions</p>
+          </div>
+          <div class="service-details-grid3">
+            <p class="whatWeOfferText">What We Offer?</p>
+            <ul>
+              <li>Function strategies</li>
+              <li>S&M2 alignment</li>
+              <li>Talent management</li>
+              <li>Business development</li>
+              <li>Process diagnostics</li>
+              <li>Function SOPs</li>
+            </ul>
+          </div>
+          <div class="child4" style="margin-top: -10px;">
+            <p class="title">BUSINESS OPERATIONS</p>
+            <p class="subtitle">Realize business vision through implementation</p>
+          </div>
+          <div class="service-details-grid4">
+            <p class="whatWeOfferText">What We Offer?</p>
+            <ul>
+              <li>Process re-engineering</li>
+              <li>Resource optimization</li>
+              <li>Business build-out</li>
+              <li>Governance dashboards</li>
+              <li>Employee scorecards</li>
+              <li>Org restructuring</li>
+            </ul>
+          </div>
+          <div class="service-details-grid">
+            <p class="whatWeOfferTextDefault">
+              What We Offer?
+            </p>
+          </div>
+        </div>
+      </div>
     </ion-card-content>
   </ion-card>
+
   <!-- service models -->
   <ion-card class="service-models-ion-card">
     <ion-card-header class="card-header">
-      <ion-card-title>Service Models</ion-card-title>
+      <ion-card-title class="card-title">Service Models</ion-card-title>
     </ion-card-header>
     <ion-grid>
       <ion-row>
@@ -220,10 +215,11 @@
       </ion-row>
     </ion-grid>
   </ion-card>
+
   <!-- why choose us -->
-  <ion-card class="welcome-card">
+  <ion-card class="why-choose-us-card">
     <ion-card-header class="card-header">
-      <ion-card-title>Why Choose Us?</ion-card-title>
+      <ion-card-title class="card-title">Why Choose Us?</ion-card-title>
     </ion-card-header>
     <ion-grid>
       <ion-row>
@@ -315,10 +311,11 @@
       </ion-row>
     </ion-grid>
   </ion-card>
+
   <!-- contact us -->
   <ion-card class="service-models-ion-card">
     <ion-card-header class="card-header">
-      <ion-card-title>Get Started</ion-card-title>
+      <ion-card-title class="card-title">Get Started</ion-card-title>
     </ion-card-header>
     <ion-grid>
       <ion-row style="box-shadow: none;">
@@ -372,7 +369,7 @@
                             </ion-item>
                             <ion-row>
                               <ion-col>
-                                <ion-button type="submit" color="danger" expand="block">SEND</ion-button>
+                                <button type="submit">SEND</button>
                               </ion-col>
                             </ion-row>
                           </form>

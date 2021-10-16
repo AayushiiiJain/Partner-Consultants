@@ -44,18 +44,62 @@ ion-img {
   width: 75%;
   box-shadow: none;
 }
-.infographic-card {
+.infographic-card, .our-approach-card, .why-choose-us-card {
   box-shadow: none;
+}
+// .our-approach-card {
+//   transition-property: background, border-radius;
+//   transition-duration: 1s;
+//   transition-timing-function: linear;
+// }
+// .our-approach-card:hover {
+//   background: #ff7b29;
+//   border-radius: 50%;
+//   width: 45%;
+// }
+// .our-approach-card:hover .our-approach-image {
+//   width: 45%;
+// }
+.our-approach-image {
+  width: 100%;
 }
 .introduction-card-content {
   font-size: 24px;
   text-align: center;
   font-family: 'Lato';
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .service-models-card {
   width: 75%;
   margin: auto;
   box-shadow: none;
+}
+.service-models-ion-card {
+  background: rgb(29, 51, 46);
+  margin: 0;
+}
+.card-title {
+  font-size: 45px;
+  color: orange !important;
+  text-shadow: 2px 2px #FF0000;
+
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  // animation-direction: alternate;
+
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 // same height
 ion-content {
@@ -119,39 +163,103 @@ ion-card, ion-card-title {
   color: darkorange;
 }
 .service-content {
-  // width: 50%;
   margin: auto;
 }
+.grid, .service-grid {
+  display: grid;
+}
 .grid {
-  display: grid;
-}
-.grid, .service-details-grid {
-  
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 1rem;
-  background: rgb(42, 66, 61);
+  grid-template-columns: 3fr 1fr;
   width: 75%;
-}
-// .service-details-grid {
-//   display: none;
-// }
-.service-content>.grid:hover .service-details-grid {
-  display: grid;
-  position: relative;
-}
-.grid > div {
-  padding: 1rem;
-  height: 250px;
+  margin: auto;
+
+  // border-left: 10px solid grey;
+
+  // width: 0;
+  //     height: 0;
+  //     border-left: 50px solid transparent;
+  //     border-right: 50px solid transparent;
+  //     border-bottom: 100px solid red;
 }
 
+// #flag_top {
+//   width: 400px; height: 40px; background: #231f20; position: relative;
+//     -webkit-transform: skew(40deg);
+//    -moz-transform: skew(40deg);
+//      -o-transform: skew(40deg);
+//   margin-left: 30px;
+// }
+// #flag_bottom {
+//   width: 400px; height: 40px; background: #231f20; position: relative;
+//     -webkit-transform: skew(320deg);
+//    -moz-transform: skew(320deg);
+//      -o-transform: skew(320deg);
+//   margin-left: 30px;
+// }
+
+.service-grid {
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  background: rgb(42, 66, 61);
+}
+.service-grid > div {
+  padding: 4rem;
+  height: 250px;
+}
+.service-grid {
+  margin: auto;
+  width: 75%;
+}
+.service-grid > .child:hover{
+  background: rgb(29, 51, 46);
+}
+.service-details-grid {
+  display: grid;
+  width: 25%;
+  position: absolute;
+  justify-content: center;
+  background: rgb(42, 66, 61);
+  margin-left: 510px;
+  height: 510px !important;
+}
+.service-details-grid1, .service-details-grid2, .service-details-grid3, .service-details-grid4 {
+  display: none;
+}
+.service-grid > .child1:hover ~ .service-details-grid,
+.service-grid > .child2:hover ~ .service-details-grid,
+.service-grid > .child3:hover ~ .service-details-grid,
+.service-grid > .child4:hover ~ .service-details-grid {
+  display: none;
+}
+.service-grid > .child1:hover ~ .service-details-grid1,
+.service-grid > .child2:hover ~ .service-details-grid2,
+.service-grid > .child3:hover ~ .service-details-grid3,
+.service-grid > .child4:hover ~ .service-details-grid4 {
+  display: grid;
+  position: absolute;
+  justify-content: center;
+  width: 25%;
+  margin-left: 510px;
+  margin-top: 115px;
+}
+.whatWeOfferText, .whatWeOfferTextDefault {
+  font-family: 'Lato';
+  font-size: 30px;
+  text-align: center;
+  color: coral;
+}
+.whatWeOfferTextDefault {
+  margin: auto;
+}
 .services-card {
-  background-color: darkgreen;
+  // background-color: rgb(43, 82, 73);
+  box-shadow: none;
 }
 .title {
   font-size: 15px;
   text-align: center;
   margin-top: 10px;
-  width: 50%;
+  // width: 50%;
   margin: auto;
 }
 .subtitle {
@@ -165,10 +273,30 @@ ion-card, ion-card-title {
 }
 .grid-circle {
   width: 1em;
-  margin-left: 282px;
+  margin-left: 236px;
   height: 1em;
-  margin-top: -17px;
+  margin-top: -15px;
   border-radius: 50%;
   background-color: green;
   border: 4px solid lightsteelblue;
+}
+.lines {
+  border-left: thick solid #ff0000;
+}
+button {
+  border: 0;
+  background: #0087cc;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 #006599;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 12px 20px;
+  transition: all .1s linear;
+}
+button:active {
+  box-shadow: 0 2px 0 #006599;
+  transform: translateY(3px);
 }
