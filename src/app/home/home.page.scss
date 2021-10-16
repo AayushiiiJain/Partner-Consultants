@@ -60,6 +60,10 @@ ion-img {
 // .our-approach-card:hover .our-approach-image {
 //   width: 45%;
 // }
+.our-approach-card {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 .our-approach-image {
   width: 100%;
 }
@@ -128,10 +132,16 @@ ion-card {
 .write-to-us-card {
   width: 100%;
 }
-.homepage-image {
-  width: 1520px;
-  object-fit: fill;
-  height: 500px;
+ion-card img.homepage-image {
+  // width: 1520px;
+  // object-fit: fill;
+  // height: 500px;
+  margin: 0 !important;
+  height: 100% !important;
+  width: 100% !important;
+  filter: brightness(0.5);
+  max-width: 100% !important;
+  align-items: center;
 }
 .home-text {
   position: absolute;
@@ -158,6 +168,7 @@ ion-card, ion-card-title {
 }
 .homepage-image-card {
   margin: 0;
+  box-shadow: none;
 }
 .highlight-text {
   color: darkorange;
@@ -299,4 +310,19 @@ button {
 button:active {
   box-shadow: 0 2px 0 #006599;
   transform: translateY(3px);
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 1260px;
+
+}
+
+.home-text {
+  position: absolute;
+  top: 8px;
+  left: 16px;
 }
