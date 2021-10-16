@@ -7,7 +7,7 @@
   <ion-card class="homepage-image-card">
     <div class="home-text">
       <p class="text1">Our clients trust us…..</p>
-      <p class="text2">because we partner with them</p>
+      <p class="text2">because we <span class="highlight-text">partner</span> with them</p>
     </div>
     <ion-img class="homepage-image" src="assets/homepage-image.jpg" no-padding no-margin></ion-img>
   </ion-card>
@@ -49,14 +49,69 @@
     <!-- </ion-grid> -->
   </ion-card>
   <!-- services -->
-  <ion-card class="welcome-card">
-    <ion-card-header>
-        <ion-card-subtitle>Get Started</ion-card-subtitle>
-        <ion-card-title>Welcome to Ionic</ion-card-title>
+  <ion-card class="services-card">
+    <ion-card-header class="service-models-header">
+      <ion-card-title>Services</ion-card-title>
     </ion-card-header>
-    <ion-card-content>
-        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
-        <button id="demo">Click me</button>
+    <ion-card-content class="service-content">
+      
+      <!-- <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div class="square">
+
+            </div>
+          </ion-col>
+          <ion-col>
+            2
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            3
+          </ion-col>
+          <ion-col>
+            4
+          </ion-col>
+        </ion-row>
+      </ion-grid> -->
+
+      <ion-grid>
+        <ion-row>
+          <ion-col size="8">
+            <div class="grid">
+              <div class="child" style="border-right: 2px dashed white;border-bottom: 2px dashed white;">
+                <p class="title">BUSINESS STRATEGY</p>
+                <p class="subtitle">Sync destination with company navigation</p>
+              </div>
+              <div class="child" style="border-bottom: 2px dashed white;">
+                <p class="title">BUSINESS RESEARCH</p>
+                <p class="subtitle">Back business decisions with data and insights</p>
+              </div>
+              <span class="grid-circle"></span>
+              <span></span>
+              <div class="child" style="border-right: 2px dashed white;">
+                <p class="title">FUNCTIONAL EXCELLENCE</p>
+                <p class="subtitle">Optimize performance of business functions</p>
+              </div>
+              <div class="child">
+                <p class="title">BUSINESS OPERATIONS</p>
+                <p class="subtitle">Realize business vision through implementation</p>
+              </div>
+            </div>
+          </ion-col>
+          <ion-col size="4">
+            <div class="service-details-grid">
+              <div class="child">
+                <p class="title">abc</p>
+                <p class="subtitle">abcdef</p>
+              </div>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      
+
     </ion-card-content>
   </ion-card>
   <!-- service models -->
@@ -67,7 +122,6 @@
     <ion-grid>
       <ion-row>
         <ion-col>
-
           <ion-card class="service-models-card">
             <ion-img class="service-models-image" src="assets/for-end-clients-service-models.png"></ion-img>
             <ion-card-header class="service-models-header">
@@ -120,9 +174,7 @@
                 </ion-row>
               </ion-grid>
             </ion-card-content>
-
           </ion-card>
-
         </ion-col>
       </ion-row>
       <ion-row>
@@ -163,7 +215,6 @@
                 </ion-row>
               </ion-grid>
             </ion-card-content>
-
           </ion-card>
         </ion-col>
       </ion-row>

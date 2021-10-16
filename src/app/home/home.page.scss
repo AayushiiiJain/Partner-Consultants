@@ -115,3 +115,60 @@ ion-card, ion-card-title {
 .homepage-image-card {
   margin: 0;
 }
+.highlight-text {
+  color: darkorange;
+}
+.service-content {
+  // width: 50%;
+  margin: auto;
+}
+.grid {
+  display: grid;
+}
+.grid, .service-details-grid {
+  
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  background: rgb(42, 66, 61);
+  width: 75%;
+}
+// .service-details-grid {
+//   display: none;
+// }
+.service-content>.grid:hover .service-details-grid {
+  display: grid;
+  position: relative;
+}
+.grid > div {
+  padding: 1rem;
+  height: 250px;
+}
+
+.services-card {
+  background-color: darkgreen;
+}
+.title {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 10px;
+  width: 50%;
+  margin: auto;
+}
+.subtitle {
+  padding-top: 20px;
+  text-align: center;
+  font-style: italic;
+  font-size: 15px;
+  margin-top: 15px;
+  width: 75%;
+  margin: auto;
+}
+.grid-circle {
+  width: 1em;
+  margin-left: 282px;
+  height: 1em;
+  margin-top: -17px;
+  border-radius: 50%;
+  background-color: green;
+  border: 4px solid lightsteelblue;
+}
