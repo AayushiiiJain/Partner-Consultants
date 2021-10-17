@@ -88,23 +88,40 @@ ion-img {
   color: orange !important;
   text-shadow: 2px 2px #FF0000;
 
-  animation-duration: 3s;
-  animation-name: slidein;
-  animation-iteration-count: infinite;
+  animation: moving 5s normal; 
+    -webkit-animation: moving 5s normal; 
+    position:relative;
+
+  // animation: movingTopToBottom 3s ease infinite;
+  // -webkit-animation: movingTopToBottom ease 3s infinite;
+
+  // animation-duration: 3s;
+  // animation-name: slidein;
+  // animation-iteration-count: infinite;
   // animation-direction: alternate;
 
 }
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
+@keyframes moving {
+  from {top: -100px;}
+  to {top: 0px;}
 }
+@-webkit-keyframes moving {
+     from {top: -100px;}
+  to {top: 0px;}
+}
+
+
+// @keyframes slidein {
+//   from {
+//     margin-left: 100%;
+//     width: 300%;
+//   }
+
+//   to {
+//     margin-left: 0%;
+//     width: 100%;
+//   }
+// }
 // same height
 ion-content {
   ion-col {
@@ -162,6 +179,7 @@ ion-card, ion-card-title {
   font-size: 50px;
   padding: 0;
   margin: 0;
+  text-align: left;
 }
 .text2 {
   font-size: 50px;
@@ -261,6 +279,7 @@ ion-card, ion-card-title {
 }
 .whatWeOfferTextDefault {
   margin: auto;
+  font-size: 50px;
 }
 .services-card {
   // background-color: rgb(43, 82, 73);
