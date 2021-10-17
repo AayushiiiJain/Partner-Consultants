@@ -74,12 +74,12 @@ ion-img {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.service-models-card {
+.service-models-card, .contact-details-card {
   width: 75%;
   margin: auto;
   box-shadow: none;
 }
-.service-models-ion-card {
+.service-models-ion-card, .contact-us-card {
   background: rgb(29, 51, 46);
   margin: 0;
 }
@@ -351,6 +351,12 @@ button:active {
   .container {
     height: 930px;
   }
+  .home-text {
+    width: 45%;
+  }
+  .text2 {
+    text-align: left;
+  }
   .infographic-image {
     width: 100%;
     height: 500px;
@@ -358,12 +364,79 @@ button:active {
   .introduction-card-content {
     font-size: 25px;
   }
+  .service-models-image {
+    width: 25%;
+  }
+  .service-models-header {
+    width: 100%;
+  }
+  .service-models-header ion-card-title {
+    font-size: 30px;
+  }
+  .service-models-ion-card .card-header,
+  .contact-us-card .card-header,
+  .why-choose-us-card .card-header,
+  .contact-details-card {
+    width: 100%;
+  }
+  .contact-us-card ion-card-content {
+    font-size: 25px;
+  }
+  .write-to-us-card ion-card-title {
+    font-size: 35px;
+  }
+  .write-to-us-card ion-item {
+    font-size: 30px;
+  }
+  .contact-us-card {
+    height: 900px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .container {
     height: 930px;
+  }
+  .introduction-card-content {
+    font-size: 28px;
+  }
+  .infographic-image {
+    width: 100%;
+    height: 500px;
+  }
+  .service-models-image {
+    width: 25%;
+  }
+  .service-models-header,
+  .service-models-ion-card .card-header,
+  .why-choose-us-card .card-header,
+  .contact-us-card .card-header {
+    width: 100%;
+  }
+  .service-models-header ion-card-title,
+  .why-choose-us-card .card-title {
+    font-size: 30px;
+  }
+  .service-models-details-card ion-card-title,
+  .why-choose-us-card ion-card-title {
+    font-size: 26px;
+  }
+  .service-models-details-card p,
+  .why-choose-us-card p {
+    font-size: 21px;
+  }
+  .contact-us-card ion-card-content {
+    font-size: 25px;
+  }
+  .write-to-us-card ion-card-title {
+    font-size: 35px;
+  }
+  .write-to-us-card ion-item {
+    font-size: 30px;
+  }
+  .contact-us-card {
+    height: 900px;
   }
 }
 
@@ -389,8 +462,51 @@ button:active {
   // }
 }
 
+@media only screen and (min-width: 1440px) {
+  .introduction-card-content {
+    font-size: 40px;
+  }
+  .our-approach-card {
+    height: 100%;
+  }
+  .service-grid {
+    width: 60%;
+  }
+  .service-models-header ion-card-title, .why-choose-us-card .card-title {
+    font-size: 55px;
+  }
+  .service-grid .title {
+    font-size: 20px;
+  }
+  .service-grid .subtitle {
+    width: 100%;
+    font-size: 19px;
+  }
+  .service-details-grid1,
+  .service-details-grid2,
+  .service-details-grid3,
+  .service-details-grid4 {
+    width: 30%;
+  }
+  .whatWeOfferText {
+    font-size: 50px;
+  }
+  .service-grid > .child1:hover ~ .service-details-grid1>ul>li,
+  .service-grid > .child2:hover ~ .service-details-grid2>ul>li,
+  .service-grid > .child3:hover ~ .service-details-grid3>ul>li,
+  .service-grid > .child4:hover ~ .service-details-grid4>ul>li {
+    font-size: 20px;
+  }
+  .service-grid > .child1:hover ~ .service-details-grid1,
+  .service-grid > .child2:hover ~ .service-details-grid2,
+  .service-grid > .child3:hover ~ .service-details-grid3,
+  .service-grid > .child4:hover ~ .service-details-grid4 {
+    margin-top: 0;
+  }
+}
+
 @media only screen and (min-width: 1690px) {
-  // .container {
-  //   height: 1300px;
-  // }
+  .service-grid {
+    width: 55%;
+  }
 }
